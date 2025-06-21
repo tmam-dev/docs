@@ -78,7 +78,10 @@ export function Navbar() {
 
 export function Logo() {
   return (
-    <Link href="/docs/getting-started/introduction/" className="flex items-center gap-2.5">
+    <Link
+      href="/docs/overview/introduction"
+      className="flex items-center gap-2.5"
+    >
       <h2 className="text-md font-bold font-code">tmam</h2>
     </Link>
   );

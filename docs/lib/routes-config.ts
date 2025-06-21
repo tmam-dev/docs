@@ -13,47 +13,47 @@ export const ROUTES: EachRoute[] = [
     title: "Overview",
     href: "/overview",
     noLink: true,
+    items: [{ title: "Introduction", href: "/introduction" }],
+  },
+  {
+    title: "Tutorial",
+    href: "/tutorial",
+    noLink: true,
     items: [
-      { title: "Introduction", href: "/introduction" },
+      { title: "Observability", href: "/observalibility" },
+      { title: "Evaluation", href: "/evaluation" },
+      { title: "Gaurdrail", href: "/gaurdrail" },
     ],
   },
-  // {
-  //   title: "Getting Started",
-  //   href: "/getting-started",
-  //   noLink: true,
-  //   items: [
-  //     { title: "Introduction", href: "/introduction" },
-  //     {
-  //       title: "Installation",
-  //       href: "/installation",
-  //     },
-  //     { title: "Quick Start Guide", href: "/quick-start-guide" },
-  //     {
-  //       title: "Project Structure",
-  //       href: "/project-structure",
-  //     },
-  //     {
-  //       title: "Components",
-  //       href: "/components",
-  //       items: [
-  //         { title: "Stepper", href: "/stepper" },
-  //         { title: "Tabs", href: "/tabs" },
-  //         { title: "Note", href: "/note" },
-  //         { title: "Code Block", href: "/code-block" },
-  //         { title: "Image & Link", href: "/image-link" },
-  //         { title: "File System", href: "/file-system", tag: "New" },
-  //         { title: "Custom", href: "/custom" },
-  //       ],
-  //     },
-  //     { title: "Internationalization", href: "/i18n" },
-  //     { title: "Algolia Search", href: "/algolia-search", tag: "New" },
-  //     { title: "Themes", href: "/themes" },
-  //     {
-  //       title: "Customize",
-  //       href: "/customize",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Features",
+    href: "/features",
+    noLink: true,
+    items: [
+      { title: "Tracing", href: "/tracing" },
+      { title: "Metrics", href: "/metrics" },
+      { title: "GPU Monitoring", href: "/gpu" },
+      { title: "Cost Tracing", href: "/cost" },
+      { title: "Prompt Managemnt", href: "/prompt_managment" },
+      { title: "Vault", href: "/vault" },
+      { title: "Gaurdrail", href: "/gaurdrail" },
+      { title: "OpenGround", href: "/openground" },
+      { title: "Exceptions Monitoring", href: "/exceptions_monitoring" },
+      { title: "Databases", href: "/databases" },
+    ],
+  },
+  {
+    title: "Inegrations",
+    href: "/inegration",
+    noLink: true,
+    items: [{ title: "Overview", href: "/overview" }],
+  },
+  {
+    title: "API",
+    href: "/api_reference",
+    noLink: true,
+    items: [{ title: "Overview", href: "/overview" }],
+  },
 ];
 
 type Page = { title: string; href: string };
