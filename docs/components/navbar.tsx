@@ -10,24 +10,16 @@ import AlgoliaSearch from "./algolia-search";
 
 export const NAVLINKS = [
   {
-    title: "Documentation",
-    href: `/docs${page_routes[0].href}`,
-  },
-  {
     title: "Blog",
     href: "/blog",
   },
   {
-    title: "Examples",
-    href: "#",
-  },
-  {
-    title: "Guides",
+    title: "Tutorials",
     href: "#",
   },
   {
     title: "Community",
-    href: "https://github.com/nisabmohd/Aria-Docs/discussions",
+    href: "#",
   },
 ];
 
@@ -86,9 +78,8 @@ export function Navbar() {
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2.5">
-      <CommandIcon className="w-6 h-6 text-muted-foreground" strokeWidth={2} />
-      <h2 className="text-md font-bold font-code">AriaDocs</h2>
+    <Link href="/docs/getting-started/introduction/" className="flex items-center gap-2.5">
+      <h2 className="text-md font-bold font-code">tmam</h2>
     </Link>
   );
 }
