@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/maha/Documents/GitHub/docs/app/layout\":[\"static/media/7ab9c4cba5a6d4c2-s.p.woff2\",\"static/media/fc727f226c737876-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
