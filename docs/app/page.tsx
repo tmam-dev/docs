@@ -3,9 +3,9 @@ import { page_routes } from "@/lib/routes-config";
 import { MoveUpRightIcon, TerminalSquareIcon } from "lucide-react";
 import Link from "next/link";
 
-export default function Home() {
-  return (
-    <h1 className="text-3xl font-bold tracking-tight"> tmam </h1>
 
-  );
+import { redirect } from 'next/navigation';
+
+export default function Home() {
+  redirect('docs/overview/introduction'); // change this to your desired default page
 }
