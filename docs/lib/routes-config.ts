@@ -15,20 +15,20 @@ export const ROUTES: EachRoute[] = [
     noLink: true,
     items: [
       { title: "Introduction", href: "/introduction" },
-      { title: "Installation", href: "/Installation" },
+      { title: "Installation", href: "/installation" },
       { title: "Self-hosting", href: "/self-hosting" }
     ],
   },
-  {
-    title: "Tutorial",
-    href: "/tutorial",
-    noLink: true,
-    items: [
-      { title: "Observability", href: "/observalibility" },
-      { title: "Evaluation", href: "/evaluation" },
-      { title: "Gaurdrail", href: "/gaurdrail" },
-    ],
-  },
+  // {
+  //   title: "Tutorial",
+  //   href: "/tutorial",
+  //   noLink: true,
+  //   items: [
+  //     { title: "Observability", href: "/observalibility" },
+  //     { title: "Evaluation", href: "/evaluation" },
+  //     { title: "Gaurdrail", href: "/gaurdrail" },
+  //   ],
+  // },
   {
     title: "Features",
     href: "/features",

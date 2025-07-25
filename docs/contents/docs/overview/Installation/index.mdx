@@ -1,88 +1,70 @@
 ---
-title: Instllaition
+title: Installation
+description: Installation guide for our application.
 ---
 
-This guide will help you set up OpenTelemetry Auto Instrumentation to monitor your LLM application using TMAM. In just a few steps, you'll be able to track and analyze the performance and usage of your LLM applications. We'll show you how to send OpenTelemetry traces and metrics from your applications directly to TMAM.
+Setting up TMAM is straightforward, with options to use Python or Typescript SDK.
 
-
-## Instructions
-To get started, follow these steps:
+## Python SDK
+To get started, you can use our Python SDK. 
 <Stepper>
-  <StepperItem title="Step 1: Install Python or Javascript SDK">
-    Install Python SDK using pip:
+  <StepperItem title="Step 1: Insall our SDK">
+    Begin by install python SDK:
 
     ```plaintext
-    pip install TMAM-SDK
-    ```
-    or install Javascript SDK using pip:
-
-    ```plaintext
-    npm install TMAM-SDK
+    pip install tmam
     ```
   </StepperItem>
 
-  <StepperItem title="Step 2: Initialize TMAM in Your Application">
-    After install the SDK, initate :
+  <StepperItem title="Step 2: Add observability">
+    After install SDK, add observability to your GenAI application with one line:
 
     ```plaintext
-    import tmam
+      import tmam
 
-    tmam.init(
-        url="http://api.tmam.ai/api/sdk/v1",
-        public_key="pk-tmam-0edeba2a-f6f3-4efd-982c-412adbb03046",
-        secrect_key="sk-tmam-b320dda9-e36d-4eac-8ac5-4793fd38e002",
-    )
-    # Your LLM or agent code here
-    from openai import OpenAI
-    # ...
-    Once initialized, tmam will auto-instrument supported components and begin sending traces and metrics to TMAM’s backend.
+        tmam.init(
+            url="http://api.tmam.ai/api/sdk/v1",
+            public_key="pk-tmam-0edeba2a-f6f3-4efd-982c-412adbb03046",
+            secret_key="sk-tmam-b320dda9-e36d-4eac-8ac5-4793fd38e002",
+        )
+
+        # Your LLM or agent code here
+        from openai import OpenAI
+        # ...
+        Once initialized, tmam will auto-instrument supported components and begin sending traces and metrics to TMAM’s backend.
     ```
   </StepperItem>
 
-  <StepperItem title="Step 3: Visualize and Analyze">
-    Install all necessary project dependencies with npm:
-
-    <Note title="Remember">
-      To support React 19, package maintainers will need to test and update their packages to include React 19 as a peer dependency. This is already in progress.
-      <br/>
-    </Note>
-
-    ```plaintext
-    npm install
-    ```
-  </StepperItem>
-
-  <StepperItem title="Step 4: >
-    Finally, start the development server to view the project locally:
-
-    ```plaintext
-    npm run dev
-    ```
-  </StepperItem>
 </Stepper>
 
-## Example
+## Javascript SDK
+To get started, you can use our Python SDK. 
+<Stepper>
+  <StepperItem title="Step 1: Insall our SDK">
+    Begin by install python SDK:
 
-For a faster setup, use the `npx` command to create a new AriaDocs project in one step:
+    ```plaintext
+    pip install tmam
+    ```
+  </StepperItem>
 
-```plaintext
-npx create-aria-doc <project-directory>
-```
+  <StepperItem title="Step 2: Add observability">
+    After install SDK, add observability to your GenAI application with one line:
 
-**Command Output:**
+    ```plaintext
+      import tmam
 
-```plaintext
-Creating a new AriaDocs project in /path/to/your/project from the master branch...
-Cloning Master (Full Documentation)...
-AriaDocs project successfully created in /path/to/your/project!
+        tmam.init(
+            url="http://api.tmam.ai/api/sdk/v1",
+            public_key="pk-tmam-0edeba2a-f6f3-4efd-982c-412adbb03046",
+            secret_key="sk-tmam-b320dda9-e36d-4eac-8ac5-4793fd38e002",
+        )
 
-Next steps:
-1. Navigate to your project directory:
-   cd <project-directory>
-2. Install dependencies:
-   npm install
-3. Start the development server:
-   npm run dev
-```
+        # Your LLM or agent code here
+        from openai import OpenAI
+        # ...
+        Once initialized, tmam will auto-instrument supported components and begin sending traces and metrics to TMAM’s backend.
+    ```
+  </StepperItem>
 
-With this setup, you’ll have a ready-to-use AriaDocs instance to start building your documentation.
+</Stepper>
