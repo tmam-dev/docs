@@ -62,16 +62,19 @@ export const ROUTES: EachRoute[] = [
 
 type Page = { title: string; href: string };
 
-function getRecurrsiveAllLinks(node: EachRoute) {
+function getRecursiveAllLinks(node: EachRoute, parentPath = ''): Page[] {
   const ans: Page[] = [];
+  const currentPath = `${parentPath}${node.href}`;
+
   if (!node.noLink) {
-    ans.push({ title: node.title, href: node.href });
+    ans.push({ title: node.title, href: currentPath });
   }
+
   node.items?.forEach((subNode) => {
-    const temp = { ...subNode, href: `${node.href}${subNode.href}` };
-    ans.push(...getRecurrsiveAllLinks(temp));
+    ans.push(...getRecursiveAllLinks(subNode, currentPath));
   });
+
   return ans;
 }
 
-export const page_routes = ROUTES.map((it) => getRecurrsiveAllLinks(it)).flat();
+export const page_routes = ROUTES.map((route) => getRecursiveAllLinks(route)).flat();
