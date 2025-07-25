@@ -78,3 +78,4 @@ function getRecursiveAllLinks(node: EachRoute, parentPath = ''): Page[] {
 }
 
 export const page_routes = ROUTES.map((route) => getRecursiveAllLinks(route)).flat();
+export const defaultPage = page_routes[0]?.href ?? '/overview/introduction';
