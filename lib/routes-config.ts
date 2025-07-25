@@ -47,8 +47,8 @@ export const ROUTES: EachRoute[] = [
     ],
   },
   {
-    title: "Inegrations",
-    href: "/inegration",
+    title: "integration",
+    href: "/integration",
     noLink: true,
     items: [{ title: "Overview", href: "/overview" }],
   },
