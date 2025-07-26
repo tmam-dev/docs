@@ -1,17 +1,24 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "img.freepik.com/**",
+        hostname: "img.freepik.com",
+        pathname: "/**",
       },
     ],
   },
-  // if used turbopack
-  // transpilePackages: ["next-mdx-remote"],
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/docs/overview/introduction",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
